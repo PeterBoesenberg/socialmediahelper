@@ -1,0 +1,12 @@
+name: socialmediahelper
+title: socialmediahelper
+username:
+account: espresso
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2442004
+bundleId: 3257592
+url: https://espresso.shinyapps.io/socialmediahelper/
+when: 1591888909.60234
+asMultiple: FALSE
+asStatic: FALSE
