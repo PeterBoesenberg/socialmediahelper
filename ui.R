@@ -14,7 +14,7 @@ shinyUI(fluidPage(
                               "Twitter" = "twitter")),
         ),
         column(4,
-               sliderInput("postPeople", "People for pst:",
+               sliderInput("postPeople", "People for post:",
                            min = 0, max = 10,
                            value = 5),
         ),

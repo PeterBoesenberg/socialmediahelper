@@ -47,9 +47,10 @@ saveUser <- function(handle, medium, tags = c("")) {
 }
 
 
-#TODO get fixed number
-#TODO randomize people
 getUsersForPost <- function(users, taggings, med, count) {
-  filtered <- users[grep(taggings, users$tags)][medium==med, handle]
-  filtered  
+  filtered <- users[grep(taggings, users$tags)][medium==med]
+  if(nrow(filtered) > count) {
+    filtered <- filtered[sample(.N,count)]
+  }
+  filtered[, handle]
 }
